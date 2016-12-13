@@ -1,0 +1,2 @@
+127.0.0.1 - - [11/Dec/2016:13:38:10 -0300] "GET /v1/category HTTP/1.1" 404 - http-bio-8080-exec-1 0
+127.0.0.1 - - [11/Dec/2016:13:44:52 -0300] "GET /v1/category HTTP/1.1" 404 - http-bio-8080-exec-3 0

@@ -1,0 +1,7 @@
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/response/Error.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/config/AppConfigAdapter.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/response/CategoryResponse.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/exception/FilmProducerApiException.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/controller/advise/FilmProducerAdviceController.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/controller/CategoryController.java
+/home/osboxes/workspace/film-producer/src/main/java/com/film/producer/config/AppInitializer.java

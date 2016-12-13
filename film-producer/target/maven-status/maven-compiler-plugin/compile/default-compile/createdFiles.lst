@@ -1,0 +1,10 @@
+com/film/producer/controller/CategoryController.class
+com/film/producer/controller/advise/FilmProducerAdviceController.class
+com/film/producer/config/AppConfigAdapter.class
+com/film/producer/exception/FilmProducerApiException.class
+com/film/producer/response/Error$Builder.class
+com/film/producer/response/CategoryResponse$Builder.class
+com/film/producer/response/Error.class
+com/film/producer/config/AppInitializer.class
+com/film/producer/response/CategoryResponse.class
+com/film/producer/exception/FilmProducerApiException$ExceptionTypeData.class
