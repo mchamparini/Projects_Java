@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/02/2017 17:40:02 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="org.clinica.entity.Paciente" extends="org.clinica.entity.Personapaciente" table="PACIENTE" lazy="false">
+        <key>
+            <column name="DNI" />
+        </key>
+        <property name="idHClinica" type="int" access="field">
+            <column name="IDHCLINICA" />
+        </property>
+        <one-to-one name="personapaciente" class="org.clinica.entity.Personapaciente" access="field" cascade="save-update"></one-to-one>
+    </joined-subclass>
+</hibernate-mapping>

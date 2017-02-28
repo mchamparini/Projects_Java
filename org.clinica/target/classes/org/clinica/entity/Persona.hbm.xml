@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.clinica.entity.Persona" table="PERSONA">
+        <id name="dni" type="int" access="field">
+            <column name="DNI" />
+            <generator class="assigned" />
+        </id>
+        <property name="apyno" type="java.lang.String" access="field">
+            <column name="APYNO" />
+        </property>
+        <property name="direccion" type="java.lang.String" access="field">
+            <column name="DIRECCION" />
+        </property>
+        <property name="sexo" type="char" access="field">
+            <column name="SEXO" />
+        </property>
+        <property name="fecha_nac" type="java.util.Date" access="field">
+            <column name="FECHA_NAC" />
+        </property>
+        <one-to-one name="personapaciente" class="org.clinica.entity.Personapaciente" access="field" cascade="save-update"></one-to-one>
+    </class>
+</hibernate-mapping>
