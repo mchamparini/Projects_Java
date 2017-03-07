@@ -12,8 +12,5 @@
             <column name="DNI" />
         </property>
         <one-to-one name="cuenta" class="org.clinica.entity.Cuenta" access="field" cascade="save-update"></one-to-one>
-        <many-to-one name="persona" class="org.clinica.entity.Persona" access="field" fetch="join">
-            <column name="PERSONA" />
-        </many-to-one>
     </class>
 </hibernate-mapping>
