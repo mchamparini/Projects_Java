@@ -6,7 +6,6 @@ public class Cuenta {
 	private String password;
 	private int idTipoCuenta;
 	private Cuentapersona cuentapersona;
-	private Tipocuenta tipocuenta;
 	/**
 	 * @return the idCuenta
 	 */
@@ -70,15 +69,7 @@ public class Cuenta {
 	/**
 	 * @return the tipocuenta
 	 */
-	public Tipocuenta getTipocuenta() {
-		return tipocuenta;
-	}
-	/**
-	 * @param tipocuenta the tipocuenta to set
-	 */
-	public void setTipocuenta(Tipocuenta tipocuenta) {
-		this.tipocuenta = tipocuenta;
-	}
+
 	public Cuenta(int idCuenta, String login, String password, int idTipoCuenta, Cuentapersona cuentapersona,
 			Tipocuenta tipocuenta) {
 		super();
@@ -87,7 +78,6 @@ public class Cuenta {
 		this.password = password;
 		this.idTipoCuenta = idTipoCuenta;
 		this.cuentapersona = cuentapersona;
-		this.tipocuenta = tipocuenta;
 	}
 	public Cuenta(){}
 }
