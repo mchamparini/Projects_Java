@@ -18,8 +18,7 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.2.6.Final</version>
-		</dependency>
-		<!-- JPA: servidores como JBoss y Glassfish vienen ya incorporado -->
+		</dependency>		
 		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
