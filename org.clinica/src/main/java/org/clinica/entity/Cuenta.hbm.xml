@@ -17,7 +17,6 @@
         <property name="idTipoCuenta" type="int" access="field">
             <column name="IDTIPOCUENTA" />
         </property>
-        <one-to-one name="cuentapersona" class="org.clinica.entity.Cuentapersona" access="field" cascade="save-update"></one-to-one>
-        <one-to-one name="tipocuenta" class="org.clinica.entity.Tipocuenta" access="field" cascade="save-update"></one-to-one>
+        <one-to-one name="cuentapersona" class="org.clinica.entity.Cuentapersona" access="field" cascade="save-update"></one-to-one>        
     </class>
 </hibernate-mapping>
