@@ -16,10 +16,8 @@ public class MainTest {
 		  Paciente paciente = new Paciente();
 		  Cuenta cuenta = new Cuenta();
 		  Cuentapersona cuentapersona = new Cuentapersona();
-		  Tipocuenta tipocuenta = new Tipocuenta();
 	      SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-	      Session session = null;//sessionFactory.openSession();
-		  
+	      Session session = null;//sessionFactory.openSession();		  
 		  try {
 			  session = sessionFactory.openSession();
 			  session.beginTransaction();
@@ -33,22 +31,24 @@ public class MainTest {
 			  paciente.setDni(3213123);
 			  paciente.setSexo('M');
 			  paciente.setFecha_nac(new GregorianCalendar(1990,8,10).getTime());
-			  paciente.setIdHClinica(1);
+			  paciente.setIdHClinica(1);			  
 			  
 			  cuenta.setIdCuenta(1);
 			  cuenta.setIdTipoCuenta(1);
 			  cuenta.setLogin("pepe");
 			  cuenta.setPassword("123");
 			  
+			  cuentapersona.setDni(3213123);
+			  cuentapersona.setIdCuenta(1);
 			  cuentapersona.setCuenta(cuenta);
 			  cuenta.setCuentapersona(cuentapersona);
 		  }else{
 			  System.out.println("Session is not open...");
-			  System.out.println("Connection aborted ! ! !");
-			  
+			  System.out.println("Connection aborted ! ! !");			  
 			  session.close();
 		  }
-		  try{
+		  try{	
+			  session.save(cuenta);
 			  session.save(paciente);
 			  session.getTransaction().commit(); 		 
 			  System.out.print("Transaction commit success!!!");
